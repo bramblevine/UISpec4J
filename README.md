@@ -37,9 +37,9 @@ release is not out, you can build the project as follows:
 
 As of JDK 7 *MToolkit* is no long available on Linux (see 
 [Java SE 7 and JDK 7 Compatibility](http://www.oracle.com/technetwork/java/javase/compatibility-417013.html)).
-This is still the default Toolkit on Linux for UISpec4J. To make you tests run on Linux run you builds as follow:
+To make your tests run using MToolkit with JDK6 run your builds as follow:
 
-       mvn -Dawt.toolkit=sun.awt.X11.XToolkit clean test
+       mvn -Dawt.toolkit=sun.awt.motif.MToolkit clean test
 
 ## Experimental Headless mode
 
