@@ -2,10 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>org.uispec4j</groupId>
-  <version>${revision}</version>
   <artifactId>uispec4j</artifactId>
+
+  <parent>
+    <groupId>org.uispec4j</groupId>
+    <artifactId>uispec4j-root</artifactId>
+    <version>${revision}</version>
+  </parent>
 
   <dependencies>
     <dependency>
@@ -101,7 +104,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <revision>2.5-SNAPSHOT</revision>
   </properties>
 
   <!-- Build Settings -->
